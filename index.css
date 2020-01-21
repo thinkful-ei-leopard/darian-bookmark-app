@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+.row {
+	max-width: 1000px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+	display: table;
+	content: '';
+}
+
+.row::after {
+	clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+	/*float: left;*/
+	padding-left: 1.041666666%;
+	padding-right: 1.041666666%;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+	width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+
+}
+
+.collapsed {
+	display: none;
+}
+
+.add-bookmark-form {
+	margin: auto;
+}
+
+main {
+	text-align: center;
+	/*background-color: goldenrod;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+ul {
+	list-style: none;
+}
+
+li {
+	text-align: left;
+	border: 2px solid black;
+	border-radius: 25px;
+	margin-bottom: 16px;
+}
+
+.bookmark-creation {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+form {
+	margin-top: 0px;
+}
+
+.expanded, .bookmark-heading {
+	padding-left: 20px;
+}
+
+.expanded {
+	margin-bottom: 10px;
+}
+
+.fa.fa-star.checked {
+ color: orange;
+}
